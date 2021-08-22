@@ -1,8 +1,9 @@
 package main
+
 import (
+	"html/template"
 	"log"
 	"net/http"
-	"html/template"
 )
 
 type IndexData struct {
@@ -10,7 +11,7 @@ type IndexData struct {
 	Content string
 }
 
-func test(w http.ResponseWriter, r *http.Request)  {
+func test(w http.ResponseWriter,r *http.Request)  {
 	//w.WriteHeader(http.StatusOK)
 	//w.Write([]byte(`my first website`))
 	//str := `<!DOCTYPE html>
@@ -26,7 +27,7 @@ func test(w http.ResponseWriter, r *http.Request)  {
 	data := new(IndexData)
 	data.Title = "首頁"
 	data.Content= "我的第一個首頁"
-	tmpl.Execute(w, data)
+	tmpl.Execute(w,data)
 }
 
 func main() {
