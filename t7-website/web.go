@@ -11,7 +11,7 @@ type IndexData struct {
 	Content string
 }
 
-func test(w http.ResponseWriter,r *http.Request)  {
+func test(w http.ResponseWriter, r *http.Request)  {
 	//w.WriteHeader(http.StatusOK)
 	//w.Write([]byte(`my first website`))
 	//str := `<!DOCTYPE html>
