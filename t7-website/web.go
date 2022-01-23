@@ -12,16 +12,16 @@ type IndexData struct {
 }
 
 func test(w http.ResponseWriter, r *http.Request)  {
-	//w.WriteHeader(http.StatusOK)
-	//w.Write([]byte(`my first website`))
-	//str := `<!DOCTYPE html>
+	// w.WriteHeader(http.StatusOK)
+	// w.Write([]byte(`my first website`))
+	// str := `<!DOCTYPE html>
 
-	//<html>
-	//<head><title>首頁</title></head>
-	//<body><h1>首頁</h1><p>我的第一個首頁</p></body>
-	//</html>
-	//`
-	//w.Write([]byte(str))
+	// <html>
+	// <head><title>首頁</title></head>
+	// <body><h1>首頁</h1><p>我的第一個首頁</p></body>
+	// </html>
+	// `
+	// w.Write([]byte(str))
 
 	tmpl := template.Must(template.ParseFiles("./index.html"))
 	data := new(IndexData)
