@@ -3,7 +3,6 @@ package main
 import (
 	"net/http"
 	"strconv"
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -22,7 +21,6 @@ func main() {
 	router.GET("/deposit/:input", deposit)
 	router.GET("/withdraw/:input", withdraw)
 	router.GET("/balance/", getBalance)
-
 	router.Run(":80")
 }
 
