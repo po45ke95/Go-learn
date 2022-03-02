@@ -28,7 +28,7 @@ func main() {
 func getBalance(context *gin.Context) {
 	result.Amount = balance // 返回的Amount為當前餘額
 	result.Status = "ok"    // 查詢時，可將預設狀態設為成功
-	result.Message = ""     // 成功時Message提示為空
+	result.Message = "operator success."     // 成功時Message提示為空
 	context.JSON(http.StatusOK, result)
 }
 
